@@ -1,0 +1,14 @@
+.icon {
+  cursor: pointer;
+  float: right;
+  left: 88%;
+  color: #fff;
+  padding-right: 3%;
+  padding-top: 1%;
+  position: absolute;
+  z-index: 999;
+
+  @mixin atSmall {
+    padding-right: 2%;
+  }
+}

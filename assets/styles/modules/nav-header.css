@@ -1,0 +1,117 @@
+.nav-header {
+  z-index: 5;
+
+
+  nav {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    transition: all 0.5s ease;
+    z-index: 5;
+
+    @mixin atMedium {
+      position: fixed;
+      top: 50px;
+    }
+  }
+
+  nav.hidden {
+    transform: translate3d(0, -120%, 0);
+  }
+
+  nav ul {
+    display: none;
+    float: right;
+    position: relative;
+    padding-left: 65%;
+
+
+
+    @mixin atSmall {
+      padding-left: 80%;
+    }
+
+    @mixin atMedium {
+      display: block;
+      background: none;
+      float: none;
+      padding: 20px 30px;
+    }
+  }
+
+  nav ul li {
+    display: block;
+    margin-right: 60px;
+    padding: 0 0;
+
+    @mixin atMedium {
+      display: block;
+      padding: 0;
+      padding-top: 20px;
+    }
+  }
+
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #000;
+    font-family: raleway;
+    font-weight: 300;
+    letter-spacing: .1em;
+    padding: 0px 10px;
+    text-align: center;
+    margin-top: 50px;
+
+    @mixin atMedium {
+      margin-top: 0;
+      position: sticky;
+      letter-spacing: .2em;
+      left: 0;
+      padding-top: 0px;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      font-size: 2rem;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+  }
+
+  nav li span {
+    display: block;
+  }
+
+  nav ul li a:hover {
+    font-weight: 500;
+    background: rgba(244, 167, 185, .8);
+  }
+
+  .active {
+    display: inline-block;
+    border-bottom: none;
+    color: #000;
+
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  @media (max-width: 800px) {
+    .toggle {
+      display: block;
+
+    }
+  }
+
+
+
+}

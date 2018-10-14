@@ -1,0 +1,54 @@
+.input .-pill {
+  border-radius: 40px;
+}
+
+.input {
+  width: 100%;
+  background: none;
+
+}
+
+
+
+.input input {
+    border: none;
+    padding: 0 24px;
+    color: #222;
+    flex-grow: 9;
+    line-height: 48px;
+    width: 500px;
+
+}
+
+.btn--strong, .button.button--strong {
+    color: #fff;
+    background: purple;
+    background: linear-gradient(90deg,#6c9 30%,#9eef76 70%);
+    background-position: 0 0;
+    background-size: 200% 300%;
+    transition: 1s;
+    border-color: transparent;
+    font-weight: 700;
+}
+
+.btn .-pill, .button.button--pill {
+    border-radius: 40px;
+}
+
+
+
+.btn, .button {
+    background: #e4e2e0;
+    border: 1px solid #d7d5d2;
+    padding: 15px 31px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+form {
+    display: block;
+    padding: 30px 500px;
+}

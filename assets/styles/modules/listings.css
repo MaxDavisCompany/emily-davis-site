@@ -1,0 +1,58 @@
+.listings {
+  display: grid;
+
+  h1 {
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    padding: 0 20px;
+    font-size: 2rem;
+
+    @mixinatMedium {
+      padding-top: 50px;
+      font-size: 2.3rem;
+    }
+  }
+
+  .house-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+  padding: 5px 20px;
+
+
+  @mixin atMedium {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 50px 275px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  }
+
+  h5 {
+    padding-top: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+
+    @mixin atMedium {
+      text-align: left;
+      padding-top: 20px;
+    }
+  }
+
+  h6 {
+    padding-bottom: 20px;
+    text-align: center;
+
+    @mixin atMedium {
+      padding-bottom: 50px;
+      text-align: left;
+    }
+  }
+}
