@@ -13,14 +13,7 @@
       font-size: 2.3rem;
     }
   }
-  .fade {
-    opacity: 1;
-    transition: .5s;
-  }
-  .fade:hover {
-    opacity: .2;
-    cursor: pointer;
-  }
+
 
   .house-images {
   display: grid;
@@ -63,4 +56,13 @@
       text-align: left;
     }
   }
+}
+
+.fade {
+  opacity: 1;
+  transition: .5s;
+}
+.fade:hover {
+  opacity: .2;
+  cursor: pointer;
 }
